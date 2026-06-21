@@ -1,0 +1,136 @@
+# ============================================================
+#  Smart Blind Stick — .gitignore
+#  Covers: Python (Raspberry Pi) + Flutter (Mobile App)
+# ============================================================
+
+
+# ============================================================
+#  SECRETS & CREDENTIALS  ← MOST IMPORTANT
+# ============================================================
+*.env
+.env.*
+secrets.py
+config_local.py
+supabase_keys.py
+**/google-services.json
+**/GoogleService-Info.plist
+
+
+# ============================================================
+#  PYTHON
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+
+# Jupyter
+.ipynb_checkpoints/
+
+# mypy / type checkers
+.mypy_cache/
+.dmypy.json
+
+# Logs
+*.log
+logs/
+
+
+# ============================================================
+#  YOLO / ML MODELS  (large binary files — store separately)
+# ============================================================
+*.pt
+*.onnx
+*.tflite
+*.engine
+*.weights
+runs/
+datasets/
+
+
+# ============================================================
+#  RASPBERRY PI / LINUX
+# ============================================================
+*.sock
+*.pid
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+#  FLUTTER / DART
+# ============================================================
+
+# Build outputs
+grad_proj/build/
+grad_proj/.dart_tool/
+grad_proj/.flutter-plugins
+grad_proj/.flutter-plugins-dependencies
+
+# Generated files
+grad_proj/**/*.g.dart
+grad_proj/**/*.freezed.dart
+grad_proj/**/*.mocks.dart
+
+# IDE
+grad_proj/.idea/
+grad_proj/.vscode/
+grad_proj/*.iml
+
+# Android
+grad_proj/android/.gradle/
+grad_proj/android/local.properties
+grad_proj/android/captures/
+grad_proj/android/gradlew
+grad_proj/android/gradlew.bat
+grad_proj/android/key.properties
+grad_proj/android/**/*.keystore
+grad_proj/android/**/*.jks
+
+# iOS
+grad_proj/ios/.symlinks/
+grad_proj/ios/Flutter/flutter_export_environment.sh
+grad_proj/ios/Flutter/Generated.xcconfig
+grad_proj/ios/Pods/
+grad_proj/ios/Podfile.lock
+
+# macOS
+grad_proj/macos/Flutter/GeneratedPluginRegistrant.swift
+grad_proj/macos/Flutter/ephemeral/
+
+# Web
+grad_proj/web/
+
+
+# ============================================================
+#  GENERAL
+# ============================================================
+*.zip
+*.tar.gz
+*.rar
+.vscode/
+.idea/
